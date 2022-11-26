@@ -9,7 +9,7 @@
 <body>
     <video id="asdf" playsInline autoplay controls muted></video>
     <script>
-        window.navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'}})
+        window.navigator.mediaDevices.getUserMedia({video:{facingMode:'environment',width:2688,aspectRatio:2.1642512077294684}})
             .then(stream => {
                 const videoPlayer = document.getElementById('asdf');
                 videoPlayer.srcObject = stream;
